@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Cika Chat App</title>
+  <style>
+
+  body {
+      background-color: linen;
+  }
+
+  h2 {
+      color: red;
+      text-align: center;
+  }
+
+  p {
+    color: red
+  }
+
+  form {
+    background-color: pink
+
+  }
+
+  input {
+    column-rule-color: linen
+  }
+
+  </style>
+</head>
+
+<body>
+
+<center> <h2>Cika Chat App</h2> </center>
+
+<center>
+ <form id="form">
+  Name:<br>
+  <input type="text" name="firstname" value="cika" id="firstname">
+  <br>
+  Message:<br>
+  <input type="text" name="message" value="Hello world" id="message">
+  <br><br>
+  <input type="submit" value="Submit" id="submit" onclick="myFunction()">
+</form>
+</center>
+
+
+<center>
+<p>Click submit to send your message</p>
+</center>
+
+<p id="submit"></p>
+
+<script>
+
+function myFunction() {
+    document.getElementById("submit").innerHTML = Date();
+}
+
+var name = document.getElementById("firstname")
+var message = document.getElementById("Message")
+
+document.write(document.getElementById("submit").innerHTML = Date())
+document.write(document.getElementById("submit").innerHTML = Name)
+document.write(document.getElementById("submit").innerHTML = message)
+
+
+</script>
+
+</body>
+</html>
